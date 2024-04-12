@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Color Guessing Game</h1>
+   
+    <div class="levels">
+        <div class="levels">
+            <button id="easy" class="level-button easy">Easy</button>
+            <button id="medium" class="level-button medium">Medium</button>
+            <button id="hard" class="level-button hard">Hard</button>
+            <button id="reset" class="level-button">Reset</button>
+        </div>
+        
+    </div>
+
+    <div id="game-container">
+        <div class="game">
+            <p class="color-display-container">Guess the color: <span id="color-display"
+                    class="color-display">#FFFFFF</span></p>
+            <p class="points-display-container">Points: <span id="points" class="points-display">0</span></p>
+        </div>
+        <div id="game-board" class="board">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

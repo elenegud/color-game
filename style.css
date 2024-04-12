@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+  background: white;
+   
+    background-size: cover;
+
+  
+    color: black;
+    text-align: center;
+}
+
+
+.level-buttons {
+    margin: 20px 0;
+}
+
+h1 {
+    font-family: 'Pixelify Sans', sans-serif; 
+    color: #9400d8;
+    font-weight: lighter;
+}
+
+.level-button {
+    background-color:  #9400d8;
+    font-family: 'Pixelify Sans', sans-serif; 
+    font-size: large;
+    color: black;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.easy {
+    background-color: green;
+}
+
+
+.medium {
+    background-color: yellow;
+}
+
+.hard {
+    background-color: red;
+}
+
+.easy:hover {
+    background-color: lightgreen !important;
+}
+
+.medium:hover {
+    background-color: rgba(243, 243, 98, 0.836) !important;
+}
+
+.hard:hover {
+    background-color: rgb(253, 142, 142) !important;
+}
+
+.level-button:hover {
+    background-color: #dba0db;
+    transform: scale(1.1);
+}
+
+.color-display-container, .points-display-container {
+    margin: 20px 0;
+}
+
+.color-display, .points-display {
+    font-weight: bold;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 30px;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black; 
+    width: fit-content; 
+}
+
+
+.card {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+    background-color: #222;
+    
+}
+
+.card:hover {
+    animation: spin 1s ease-in-out;
+    transform: scale(1.1);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
